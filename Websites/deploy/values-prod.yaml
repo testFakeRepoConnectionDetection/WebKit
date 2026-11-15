@@ -1,0 +1,24 @@
+# Production values for the webkit-perf-gateway chart.
+replicaCount: 3
+image:
+  repository: registry.corp.internal/platform/webkit-perf-gateway
+  tag: 1.4.2-corp.1
+resources:
+  limits:
+    cpu: "4"
+    memory: 8Gi
+env:
+  - name: MORTGAGES_PRODUCT_CATALOG_APAC_URL
+    value: https://mortgages-product-catalog-apac.svc.corp.internal/api/v1
+  # SEPA Message Router APAC
+  - name: SEPA_MESSAGE_ROUTER_APAC_URL
+    value: https://sepa-message-router-apac.svc.corp.internal/api/v1
+  - name: LOANS_ACCOUNT_LEDGER_APAC_URL
+    value: https://loans-account-ledger-apac.svc.corp.internal/api/v1
+  - name: TRADE_SURVEILLANCE_TRANSACTION_MONITOR_EMEA_URL
+    value: https://trade-surveillance-transaction-monitor-emea.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  host: webkit-perf.corp.internal
+  allowedSourceNamespaces:
+    - market-risk-limit-monitor  # Market Risk Limit Monitor

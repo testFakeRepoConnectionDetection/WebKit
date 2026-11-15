@@ -1,0 +1,26 @@
+# Production values for the webkit-perf-gateway chart.
+replicaCount: 3
+image:
+  repository: registry.corp.internal/platform/webkit-perf-gateway
+  tag: 1.4.2-corp.1
+resources:
+  limits:
+    cpu: "4"
+    memory: 8Gi
+env:
+  # Equity Trade Capture
+  - name: EQUITY_TRADE_CAPTURE_URL
+    value: https://equity-trade-capture.svc.corp.internal/api/v1
+  # Equity Derivatives Order Router EMEA
+  - name: EQUITY_DERIVATIVES_ORDER_ROUTER_EMEA_URL
+    value: https://equity-derivatives-order-router-emea.svc.corp.internal/api/v1
+  # Custody Event Processor AMER
+  - name: CUSTODY_EVENT_PROCESSOR_AMER_URL
+    value: https://custody-event-processor-amer.svc.corp.internal/api/v1
+  - name: CALENDARS_ENRICHMENT_SERVICE_APAC_URL
+    value: https://calendars-enrichment-service-apac.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  host: webkit-perf.corp.internal
+  allowedSourceNamespaces:
+    - calendars-mapping-service
