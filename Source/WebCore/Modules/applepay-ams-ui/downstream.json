@@ -1,0 +1,13 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "snapshot_ship": {
+      "endpoint": "https://app-ap43252.svc.corp.internal/api/v1/snapshot_ship",
+      "timeout_ms": 10000
+    },
+    "alert_forward": {
+      "endpoint": "https://app-ap43322.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    }
+  }
+}

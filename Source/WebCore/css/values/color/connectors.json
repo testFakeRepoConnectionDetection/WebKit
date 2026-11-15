@@ -1,0 +1,18 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "archive_drop": {
+      "endpoint": "https://lns-account-ledger-amer.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    },
+    "alert_forward": {
+      "counterpart": "Settlement Instruction Manager",
+      "endpoint": "https://ext-gw-174.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    },
+    "snapshot_ship": {
+      "endpoint": "https://prc-golden-source.svc.corp.internal/api/v1/snapshot_ship",
+      "timeout_ms": 10000
+    }
+  }
+}
