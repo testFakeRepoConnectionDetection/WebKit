@@ -1,0 +1,14 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "metrics_relay": {
+      "endpoint": "https://aml-audit-trail-emea.svc.corp.internal/api/v1/metrics_relay",
+      "timeout_ms": 10000
+    },
+    "archive_drop": {
+      "counterpart": "SWIFT Statement Generator",
+      "endpoint": "https://ext-gw-410.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    }
+  }
+}

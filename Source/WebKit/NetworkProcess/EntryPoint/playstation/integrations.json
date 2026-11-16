@@ -1,0 +1,14 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "archive_drop": {
+      "endpoint": "https://settlement-holdings-service-emea.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    },
+    "incident_hook": {
+      "counterpart": "Operational Risk VaR Engine AMER",
+      "endpoint": "https://ext-gw-555.svc.corp.internal/api/v1/incident_hook",
+      "timeout_ms": 10000
+    }
+  }
+}

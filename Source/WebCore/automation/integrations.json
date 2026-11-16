@@ -1,0 +1,19 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "quota_check": {
+      "source_system": "legal-entities-distribution-service-emea",
+      "secret_env": "LEGAL_ENTITIES_DISTRIBUTION_SERVICE_EMEA_WEBHOOK_SECRET"
+    },
+    "billing_feed": {
+      "counterpart": "Corporate Actions Tax Engine",
+      "endpoint": "https://ext-gw-603.svc.corp.internal/api/v1/billing_feed",
+      "timeout_ms": 10000
+    },
+    "catalog_pull": {
+      "counterpart": "Cost Allocation Close Manager EMEA",
+      "endpoint": "https://ext-gw-723.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    }
+  }
+}

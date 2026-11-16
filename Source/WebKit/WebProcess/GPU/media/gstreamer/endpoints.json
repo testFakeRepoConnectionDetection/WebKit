@@ -1,0 +1,10 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "billing_feed": {
+      "counterpart": "General Ledger Close Manager AMER",
+      "endpoint": "https://ext-gw-783.svc.corp.internal/api/v1/billing_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "incident_hook": {
+      "endpoint": "https://fund-administration-nav-calculator.svc.corp.internal/api/v1/incident_hook",
+      "timeout_ms": 10000
+    },
+    "metrics_relay": {
+      "counterpart": "KYC Report Builder",
+      "endpoint": "https://ext-gw-171.svc.corp.internal/api/v1/metrics_relay",
+      "timeout_ms": 10000
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "report_push": {
+      "source_system": "cards-settlement-engine-amer",
+      "secret_env": "CARDS_SETTLEMENT_ENGINE_AMER_WEBHOOK_SECRET"
+    },
+    "license_check": {
+      "endpoint": "https://prices-golden-source.svc.corp.internal/api/v1/license_check",
+      "timeout_ms": 10000
+    },
+    "incident_hook": {
+      "endpoint": "https://aml-case-manager.svc.corp.internal/api/v1/incident_hook",
+      "timeout_ms": 10000
+    }
+  }
+}

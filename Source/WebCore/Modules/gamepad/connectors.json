@@ -1,9 +1,0 @@
-{
-  "producer": "webkit-perf",
-  "integrations": {
-    "registry_sync": {
-      "endpoint": "https://app-ap87208.svc.corp.internal/api/v1/registry_sync",
-      "timeout_ms": 10000
-    }
-  }
-}

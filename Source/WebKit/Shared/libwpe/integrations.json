@@ -1,0 +1,14 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "catalog_pull": {
+      "endpoint": "https://geoip-lookup.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    },
+    "archive_drop": {
+      "counterpart": "Integration Directory Service APAC",
+      "endpoint": "https://ext-gw-880.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    }
+  }
+}

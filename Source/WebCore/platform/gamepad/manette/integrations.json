@@ -1,9 +1,0 @@
-{
-  "producer": "webkit-perf",
-  "integrations": {
-    "billing_feed": {
-      "source_system": "fad-nav-calculator",
-      "secret_env": "FUND_ADMINISTRATION_NAV_CALCULATOR_WEBHOOK_SECRET"
-    }
-  }
-}

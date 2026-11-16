@@ -1,0 +1,18 @@
+{
+  "producer": "webkit-perf",
+  "integrations": {
+    "alert_forward": {
+      "endpoint": "https://sepa-settlement-engine-emea.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    },
+    "status_callback": {
+      "counterpart": "Cost Allocation Posting Engine EMEA",
+      "endpoint": "https://ext-gw-147.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    },
+    "catalog_pull": {
+      "endpoint": "https://settlement-instruction-manager.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    }
+  }
+}
